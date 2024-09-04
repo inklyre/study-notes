@@ -1,0 +1,564 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Readable material for Programming topics"><link href=https://notes.inklyre.com/system-commands/notes/Week-2/ rel=canonical><link href=../Week-1/ rel=prev><link href=../Week-3/ rel=next><link rel=icon href=../../../assets/logo/logo.svg><meta name=generator content="mkdocs-1.6.0, mkdocs-material-9.5.27"><title>Week 2 - Inklyre Notes</title><link rel=stylesheet href=../../../assets/stylesheets/main.6543a935.min.css><link rel=stylesheet href=../../../assets/stylesheets/palette.06af60db.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-Y3M9M779JV"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-Y3M9M779JV",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-Y3M9M779JV",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script></head> <body dir=ltr data-md-color-scheme=default data-md-color-primary=teal data-md-color-accent=lime> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#simple-commands class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label=Header> <a href=../../.. title="Inklyre Notes" class="md-header__button md-logo" aria-label="Inklyre Notes" data-md-component=logo> <img src=../../../assets/logo/logo.svg alt=logo> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> Inklyre Notes </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> Week 2 </span> </div> </div> </div> <form class=md-header__option data-md-component=palette> <input class=md-option data-md-color-media data-md-color-scheme=default data-md-color-primary=teal data-md-color-accent=lime aria-label="Switch to dark mode" type=radio name=__palette id=__palette_0> <label class="md-header__button md-icon" title="Switch to dark mode" for=__palette_1 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg> </label> <input class=md-option data-md-color-media data-md-color-scheme=slate data-md-color-primary=teal data-md-color-accent=lime aria-label="Switch to light mode" type=radio name=__palette id=__palette_1> <label class="md-header__button md-icon" title="Switch to light mode" for=__palette_0 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg> </label> </form> <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </label> <nav class=md-search__options aria-label=Search> <a href=javascript:void(0) class="md-search__icon md-icon" title=Share aria-label=Share data-clipboard data-clipboard-text data-md-component=search-share tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg> </a> <button type=reset class="md-search__icon md-icon" title=Clear aria-label=Clear tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap tabindex=0 data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> <div class=md-header__source> <a href=https://github.com/inklyre/study-notes title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> inklyre/notes </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class=md-grid> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../../.. class=md-tabs__link> Home </a> </li> <li class="md-tabs__item md-tabs__item--active"> <a href=../Week-1/ class=md-tabs__link> System Commands </a> </li> <li class=md-tabs__item> <a href=../../../contribute/ class=md-tabs__link> How to Contribute </a> </li> <li class=md-tabs__item> <a href=../../../blog/ class=md-tabs__link> Blog </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../../.. title="Inklyre Notes" class="md-nav__button md-logo" aria-label="Inklyre Notes" data-md-component=logo> <img src=../../../assets/logo/logo.svg alt=logo> </a> Inklyre Notes </label> <div class=md-nav__source> <a href=https://github.com/inklyre/study-notes title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> inklyre/notes </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_1> <label class=md-nav__link for=__nav_1 id=__nav_1_label tabindex=0> <span class=md-ellipsis> Home </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_1_label aria-expanded=false> <label class=md-nav__title for=__nav_1> <span class="md-nav__icon md-icon"></span> Home </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../.. class=md-nav__link> <span class=md-ellipsis> About </span> </a> </li> <li class=md-nav__item> <a href=../../../credits/ class=md-nav__link> <span class=md-ellipsis> Credits </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_2 checked> <label class=md-nav__link for=__nav_2 id=__nav_2_label tabindex> <span class=md-ellipsis> System Commands </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_2_label aria-expanded=true> <label class=md-nav__title for=__nav_2> <span class="md-nav__icon md-icon"></span> System Commands </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_2_1 checked> <label class=md-nav__link for=__nav_2_1 id=__nav_2_1_label tabindex=0> <span class=md-ellipsis> Notes </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=2 aria-labelledby=__nav_2_1_label aria-expanded=true> <label class=md-nav__title for=__nav_2_1> <span class="md-nav__icon md-icon"></span> Notes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../Week-1/ class=md-nav__link> <span class=md-ellipsis> Week 1 </span> </a> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> <span class=md-ellipsis> Week 2 </span> <span class="md-nav__icon md-icon"></span> </label> <a href=./ class="md-nav__link md-nav__link--active"> <span class=md-ellipsis> Week 2 </span> </a> <nav class="md-nav md-nav--secondary" aria-label="On this Page"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> On this Page </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#more-on-ls class=md-nav__link> <span class=md-ellipsis> More on ls </span> </a> </li> <li class=md-nav__item> <a href=#utilities-for-knowing-files-better class=md-nav__link> <span class=md-ellipsis> Utilities for Knowing Files Better </span> </a> </li> <li class=md-nav__item> <a href=#knowing-more-commands class=md-nav__link> <span class=md-ellipsis> Knowing More Commands </span> </a> </li> <li class=md-nav__item> <a href=#links class=md-nav__link> <span class=md-ellipsis> Links </span> </a> </li> <li class=md-nav__item> <a href=#file-sizes class=md-nav__link> <span class=md-ellipsis> File Sizes </span> </a> </li> <li class=md-nav__item> <a href=#in-memory-filesystems class=md-nav__link> <span class=md-ellipsis> In-memory Filesystems </span> </a> </li> <li class=md-nav__item> <a href=#hell-variables class=md-nav__link> <span class=md-ellipsis> $HELL Variables </span> </a> </li> <li class=md-nav__item> <a href=#different-ways-of-executing-a-command class=md-nav__link> <span class=md-ellipsis> Different Ways of Executing a Command </span> </a> </li> <li class=md-nav__item> <a href=#process-control class=md-nav__link> <span class=md-ellipsis> Process Control </span> </a> </li> <li class=md-nav__item> <a href=#program-exit-codes class=md-nav__link> <span class=md-ellipsis> Program Exit Codes </span> </a> </li> <li class=md-nav__item> <a href=#flags-set-in-bash class=md-nav__link> <span class=md-ellipsis> Flags set in bash </span> </a> </li> <li class=md-nav__item> <a href=#shell-variables-part-1 class=md-nav__link> <span class=md-ellipsis> Shell Variables Part - 1 </span> </a> </li> <li class=md-nav__item> <a href=#linux-process-management class=md-nav__link> <span class=md-ellipsis> Linux Process Management </span> </a> </li> <li class=md-nav__item> <a href=#more-on-program-exit-codes class=md-nav__link> <span class=md-ellipsis> More on Program Exit Codes </span> </a> </li> <li class=md-nav__item> <a href=#more-on-flags-set-in-bash class=md-nav__link> <span class=md-ellipsis> More on Flags Set in Bash </span> </a> </li> <li class=md-nav__item> <a href=#multiple-commands-on-a-line class=md-nav__link> <span class=md-ellipsis> Multiple Commands on a Line </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../Week-3/ class=md-nav__link> <span class=md-ellipsis> Week 3 </span> </a> </li> <li class=md-nav__item> <a href=../Week-4/ class=md-nav__link> <span class=md-ellipsis> Week 4 </span> </a> </li> <li class=md-nav__item> <a href=../Week-5/ class=md-nav__link> <span class=md-ellipsis> Week 5 </span> </a> </li> <li class=md-nav__item> <a href=../Week-6/ class=md-nav__link> <span class=md-ellipsis> Week 6 </span> </a> </li> <li class=md-nav__item> <a href=../Week-7/ class=md-nav__link> <span class=md-ellipsis> Week 7 </span> </a> </li> <li class=md-nav__item> <a href=../Week-8/ class=md-nav__link> <span class=md-ellipsis> Week 8 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../readings/ class=md-nav__link> <span class=md-ellipsis> Readings </span> </a> </li> <li class=md-nav__item> <a href=../../videos/ class=md-nav__link> <span class=md-ellipsis> Videos </span> </a> </li> <li class=md-nav__item> <a href=../../MOOCs/ class=md-nav__link> <span class=md-ellipsis> Free MOOCs </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../../contribute/ class=md-nav__link> <span class=md-ellipsis> How to Contribute </span> </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_4> <label class=md-nav__link for=__nav_4 id=__nav_4_label tabindex=0> <span class=md-ellipsis> Blog </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_4_label aria-expanded=false> <label class=md-nav__title for=__nav_4> <span class="md-nav__icon md-icon"></span> Blog </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../blog/ class=md-nav__link> <span class=md-ellipsis> Blog </span> </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_4_2> <label class=md-nav__link for=__nav_4_2 id=__nav_4_2_label tabindex=0> <span class=md-ellipsis> Archive </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=2 aria-labelledby=__nav_4_2_label aria-expanded=false> <label class=md-nav__title for=__nav_4_2> <span class="md-nav__icon md-icon"></span> Archive </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../blog/archive/2023/ class=md-nav__link> <span class=md-ellipsis> September 2023 </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_4_3> <label class=md-nav__link for=__nav_4_3 id=__nav_4_3_label tabindex=0> <span class=md-ellipsis> Categories </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=2 aria-labelledby=__nav_4_3_label aria-expanded=false> <label class=md-nav__title for=__nav_4_3> <span class="md-nav__icon md-icon"></span> Categories </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../blog/category/features/ class=md-nav__link> <span class=md-ellipsis> Features </span> </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="On this Page"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> On this Page </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#more-on-ls class=md-nav__link> <span class=md-ellipsis> More on ls </span> </a> </li> <li class=md-nav__item> <a href=#utilities-for-knowing-files-better class=md-nav__link> <span class=md-ellipsis> Utilities for Knowing Files Better </span> </a> </li> <li class=md-nav__item> <a href=#knowing-more-commands class=md-nav__link> <span class=md-ellipsis> Knowing More Commands </span> </a> </li> <li class=md-nav__item> <a href=#links class=md-nav__link> <span class=md-ellipsis> Links </span> </a> </li> <li class=md-nav__item> <a href=#file-sizes class=md-nav__link> <span class=md-ellipsis> File Sizes </span> </a> </li> <li class=md-nav__item> <a href=#in-memory-filesystems class=md-nav__link> <span class=md-ellipsis> In-memory Filesystems </span> </a> </li> <li class=md-nav__item> <a href=#hell-variables class=md-nav__link> <span class=md-ellipsis> $HELL Variables </span> </a> </li> <li class=md-nav__item> <a href=#different-ways-of-executing-a-command class=md-nav__link> <span class=md-ellipsis> Different Ways of Executing a Command </span> </a> </li> <li class=md-nav__item> <a href=#process-control class=md-nav__link> <span class=md-ellipsis> Process Control </span> </a> </li> <li class=md-nav__item> <a href=#program-exit-codes class=md-nav__link> <span class=md-ellipsis> Program Exit Codes </span> </a> </li> <li class=md-nav__item> <a href=#flags-set-in-bash class=md-nav__link> <span class=md-ellipsis> Flags set in bash </span> </a> </li> <li class=md-nav__item> <a href=#shell-variables-part-1 class=md-nav__link> <span class=md-ellipsis> Shell Variables Part - 1 </span> </a> </li> <li class=md-nav__item> <a href=#linux-process-management class=md-nav__link> <span class=md-ellipsis> Linux Process Management </span> </a> </li> <li class=md-nav__item> <a href=#more-on-program-exit-codes class=md-nav__link> <span class=md-ellipsis> More on Program Exit Codes </span> </a> </li> <li class=md-nav__item> <a href=#more-on-flags-set-in-bash class=md-nav__link> <span class=md-ellipsis> More on Flags Set in Bash </span> </a> </li> <li class=md-nav__item> <a href=#multiple-commands-on-a-line class=md-nav__link> <span class=md-ellipsis> Multiple Commands on a Line </span> </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <a href=https://github.com/inklyre/study-notes/edit/main/docs/system-commands/notes/Week-2/index.md title="Edit this page" class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg> </a> <a href=https://github.com/inklyre/study-notes/raw/main/docs/system-commands/notes/Week-2/index.md title="View source of this page" class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg> </a> <h1 id=simple-commands>Simple Commands<a class=headerlink href=#simple-commands title="Copy link to this section for reference">&para;</a></h1> <p>In this section We cover the following topics:</p> <ul> <li>Introduction to packages and repositories. Using &lsquo;apt&rsquo; commands to manage packages. </li> <li>File types and related commands. Understanding file permissions and access modes. </li> <li>Managing file permissions through symbolic and numeric mode. </li> <li>Concept of environment variables. Important environment variables such as $HOME, $USER and $PATH</li> </ul> <hr> <p>The root folder <code>/</code> is the parent of it&rsquo;s own.</p> <pre><code class=language-terminal>/$ cd ..
+/$
+</code></pre> <ul> <li>Multiple uses of <code>/</code> is as good as one.</li> </ul> <pre><code class=language-terminal>~$ cd ///usr///bin
+/usr/bin$
+</code></pre> <h2 id=more-on-ls>More on <code>ls</code><a class=headerlink href=#more-on-ls title="Copy link to this section for reference">&para;</a></h2> <ul> <li>Interpretation of directory as an argument<ul> <li><code>ls -l level1</code> will long list all the files of directory <code>level1</code>.</li> </ul> </li> </ul> <pre><code>~$ ls -l level1
+total 2
+-rw-rw-r-- 1 sanr sanr 0 Dec 18 17:06 f1
+-rw-rw-r-- 1 sanr sanr 0 Dec 18 17:06 f2
+</code></pre> <ul> <li>Multiple options<ul> <li><code>ls -ld level1</code> will long list the directory itself (not it&rsquo;s content).</li> <li><code>ls -ldi level1</code> will long list the directory itself along with inode number (not it&rsquo;s content).</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ ls -ld level1
+drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+~$ ls -ldi level1
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+</code></pre> <ul> <li>Recursive listing<ul> <li><code>ls -R</code></li> </ul> </li> </ul> <pre><code>~$ ls -R level1
+level1:
+f1  f2
+</code></pre> <ul> <li>Order of options for <code>ls</code> is immarterial.<ul> <li>But the standard practice is <code>command options... argument...</code></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ ls -ld level1 -i
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+~$ ls -li level1 -d
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+~$ ls -di level1 -l
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+~$ ls level1 -ldi
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+</code></pre> <ul> <li>Short and long forms of <a href=#type-of-options title="Types of Options">options</a> <ul> <li><code>ls -a</code> and <code>ls --all</code> are equivalent.</li> <li>Not all options have long form, eg. <code>-l</code> for <code>ls</code></li> </ul> </li> </ul> <pre><code>~$ ls -l --directory --inode level1
+79564 drwxrwxr-x 2 sanr sanr 4 Dec 18 17:06 level1
+</code></pre> <h2 id=utilities-for-knowing-files-better>Utilities for Knowing Files Better<a class=headerlink href=#utilities-for-knowing-files-better title="Copy link to this section for reference">&para;</a></h2> <h4 id=less><a href=/Week_1/Lecture2-3.md#less><code>less</code></a><a class=headerlink href=#less title="Copy link to this section for reference">&para;</a></h4> <h4 id=cat><code>cat</code><a class=headerlink href=#cat title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>cat &lt;filename&gt;</code> : Dumps the file output on screen for reading.</li> <li>Abbr. for concatenate.</li> <li>Navigation is difficult.</li> <li>To see the <code>profile</code> file content</li> </ul> <pre><code class=language-terminal>/etc$ cat profile
+</code></pre> <h4 id=more><code>more</code><a class=headerlink href=#more title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>more &lt;filename&gt;</code> : Open file filename for reading page by page.</li> <li>It beautifully combines the features of <a href=#less><code>less</code></a> and <a href=#cat><code>cat</code></a>.</li> <li>Can not scroll <code>down</code> to see content.</li> <li>Shows percentage of file read.</li> <li>To view the <code>profile</code> file content</li> </ul> <pre><code class=language-terminal>/etc$ more profile
+</code></pre> <h4 id=head><code>head</code><a class=headerlink href=#head title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>head &lt;filename&gt;</code> : Print the first 10 lines of the file.</li> <li>Can also specify number of lines using <code>-n</code> option.</li> <li>To print first 5 lines.</li> </ul> <pre><code class=language-terminal>/etc$ head -n 5 profile
+</code></pre> <h4 id=tail><code>tail</code><a class=headerlink href=#tail title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>tail &lt;filename&gt;</code> : Print the last 10 lines of the file.</li> <li>Can also specify number of lines using <code>-n</code> option.</li> <li>To print last 5 lines.</li> </ul> <pre><code class=language-terminal>/etc$ head -n 5 profile
+</code></pre> <h4 id=wc><code>wc</code><a class=headerlink href=#wc title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>wc &lt;filename&gt;</code> - Print number of newline, word and byte for each file</li> <li>To print newline (<code>-l</code>), word (<code>w</code>) an byte (<code>-c</code>) count of <code>profile</code></li> </ul> <pre><code class=language-terminal>/etc$ wc profile
+ 27  97 582 profile
+</code></pre> <ul> <li>To print newline (<code>-l</code>) count of <code>profile</code></li> </ul> <pre><code class=language-terminal>/etc$ wc -l profile
+ 27 profile
+</code></pre> <hr> <h2 id=knowing-more-commands>Knowing More Commands<a class=headerlink href=#knowing-more-commands title="Copy link to this section for reference">&para;</a></h2> <h4 id=man><a href=/Week_1/Lecture2-3.md#man><code>man</code></a><a class=headerlink href=#man title="Copy link to this section for reference">&para;</a></h4> <h4 id=which><code>which</code><a class=headerlink href=#which title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>which &lt;command&gt;</code> - Print the path of <code>command</code> or check if a package exists or not.</li> <li>To print path of commands <code>less</code> and <code>more</code> </li> </ul> <pre><code class=language-terminal>/etc$ which less
+/usr/bin/less
+/etc$ which more
+/usr/bin/more
+</code></pre> <ul> <li>Actually the size of <code>less</code> is <code>more</code></li> </ul> <pre><code class=language-terminal>/etc$ ls -l /usr/bin/less
+-rwxr-xr-x 1 root root 199048 Mar 24  2022 /usr/bin/less
+/etc$ ls -l /usr/bin/more
+-rwxr-xr-x 1 root root 43392 Feb 21  2022 /usr/bin/more
+</code></pre> <ul> <li>To print the path of command <code>which</code>!</li> </ul> <pre><code class=language-terminal>/etc$ which which
+/usr/bin/which
+</code></pre> <ul> <li><code>which</code> is kind of reflexive!</li> </ul> <h4 id=whatis><code>whatis</code><a class=headerlink href=#whatis title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>whatis &lt;command&gt;</code> - Print brief description of <code>command</code> as the first line in <code>man</code> page</li> <li>To print the description of <code>which</code></li> </ul> <pre><code class=language-terminal>/etc$ whatis which
+which (1)            - locate a command
+</code></pre> <h4 id=apropos><code>apropos</code><a class=headerlink href=#apropos title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>apropos &lt;command | word&gt;</code> - Search the manual page names and descriptions.</li> </ul> <pre><code>~$ apropos who
+w (1)                - Show who is logged on and what they are doing.
+who (1)              - show who is logged on
+whoami (1)           - print effective userid
+</code></pre> <ul> <li><code>apropos</code> is equivalent to <code>man -k</code> i.e <code>man -k who</code> will give the same result above as given by <code>apropos who</code></li> <li>As shown below, <code>apropos</code> is the symbolic link for <code>whatis</code>, but why the outputs are different?</li> </ul> <pre><code class=language-terminal>~$ ls -l /usr/bin/apropos
+lrwxrwxrwx 1 root root 6 Nov  3 19:18 /usr/bin/apropos -&gt; whatis
+~$ ls -l /usr/bin/whatis
+-rwxr-xr-x 1 root root 48416 Mar 17  2022 /usr/bin/whatis
+</code></pre> <ul> <li>In GNU-Linux, every executable will know by which name it is invoked which results in different behaviour.</li> </ul> <h4 id=help><code>help</code><a class=headerlink href=#help title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Print the help for currently running shell. <a href=#Shells>More on shell</a></li> <li>It includes keywords, syntax for commands, loops and symbolic expressions. </li> </ul> <h4 id=info><code>info</code><a class=headerlink href=#info title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>info</code> - Prints documentation for commands.</li> <li><code>info &lt;command&gt;</code> - Documentation of specific command <code>command</code>.</li> <li>It is highly navigatable, just like a webpage.</li> <li>Links are marked in * and underline and can be navigated using arrow keys.</li> </ul> <table> <thead> <tr> <th style="text-align: center;"><code>keys</code></th> <th>Description</th> </tr> </thead> <tbody> <tr> <td style="text-align: center;"><code>enter</code></td> <td>Open a link</td> </tr> <tr> <td style="text-align: center;"><code>&lt;</code> <code>shift + ,</code></td> <td>Go back or previous</td> </tr> <tr> <td style="text-align: center;"><code>&gt;</code></td> <td>Go forward or next</td> </tr> <tr> <td style="text-align: center;"><code>M</code> <code>m</code></td> <td>Search menu, similar to seach box</td> </tr> <tr> <td style="text-align: center;"><code>S</code> <code>s</code></td> <td>Regex search</td> </tr> <tr> <td style="text-align: center;"><code>Q</code> <code>q</code></td> <td>Quit</td> </tr> </tbody> </table> <h4 id=type><code>type</code><a class=headerlink href=#type title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>type &lt;command&gt;</code> - Prints the type of the command.</li> <li>Is it<ul> <li>offered by shell?</li> <li>offered by operating system?</li> <li>alias?</li> </ul> </li> <li>To print the type of commands <code>type</code> and <code>ls</code></li> </ul> <pre><code class=language-terminal>~$ type type
+type is a shell builtin
+~$ type ls
+ls is aliased to `ls --color=auto'
+</code></pre> <ul> <li>Note : commands displayed by <code>help</code> are all shell builtins. </li> </ul> <h4 id=more-on-alias>More on <a href=/Week_1/Lecture2-3.md#alias><code>alias</code></a><a class=headerlink href=#more-on-alias title="Copy link to this section for reference">&para;</a></h4> <ul> <li>To create alias for <code>ls -l</code></li> </ul> <pre><code class=language-terminal>~$ alias ll=&quot;ls -l&quot;
+~$ ll
+drwxrwxr-x 5 groot groot 21 Dec 12 18:52 Desktop  
+drwxrwxr-x 2 groot groot  3 Nov 19 19:41 Downloads
+~$ type ll
+ll is aliased to `ls -l'
+</code></pre> <h4 id=unalias><code>unalias</code><a class=headerlink href=#unalias title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>unalias &lt;alias_command&gt;</code> - Remove the alias command.</li> <li>To remove alias <code>ll</code></li> </ul> <pre><code class=language-terminal>~$ unalias ll
+~$ ll
+ll: command not found
+</code></pre> <h4 id=rmdir><code>rmdir</code><a class=headerlink href=#rmdir title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>rmdir &lt;dirname&gt;</code> - Remove an empty directory.</li> <li>To remove empty directory <code>level2</code></li> </ul> <pre><code class=language-terminal>~$ rmdir level2
+</code></pre> <h3 id=multiple-arguments>Multiple Arguments<a class=headerlink href=#multiple-arguments title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Let&rsquo;s create some files using <code>touch</code> and multiple arguments and a directory using <code>mkdir</code>.</li> </ul> <pre><code class=language-terminal>~$ touch file1 file2 file3
+~$ mkdir mydir
+</code></pre> <h4 id=second-argument>Second argument<a class=headerlink href=#second-argument title="Copy link to this section for reference">&para;</a></h4> <ul> <li>First argument is a file and second argument is directory.</li> <li><code>file1</code> is copied to <code>mydir</code> </li> </ul> <pre><code class=language-terminal>~$ cp file1 mydir
+</code></pre> <ul> <li>Both arguments are files.</li> <li><code>file2</code> is overridden by contents of <code>file2</code></li> </ul> <pre><code class=language-terminal>~$ cp file1 file2
+</code></pre> <ul> <li> <p>Note</p> <ul> <li>Here the alias is not set for <code>cp</code>, hence the command is not interactive.</li> <li>See the <a href=/Week_1/Lecture2-3.md#man title="Explore man"><code>man</code></a> command to figure out interactive option for <code>cp</code>. </li> </ul> </li> <li> <p><code>rmdir</code> is not meant to handle non empty directories.</p> </li> </ul> <pre><code>~$ rmdir mydir
+rmdir: failed to remove 'mydir': Directory not empty
+</code></pre> <ul> <li>We can use <code>rm</code> and <code>rmdir</code> and delete directory by explicitly navigating into them.</li> <li>But, can we do something better? as this process might be cumbersome.</li> <li>To force the deletion <code>rm</code> has one option <code>-r</code></li> </ul> <pre><code class=language-terminal>~$ rm -r mydir
+</code></pre> <ul> <li>As you can see the file deletion happens without any noise.</li> <li>Note <ul> <li>Interactive mode is not set here.</li> <li>Now you know what to do to enable it.</li> </ul> </li> </ul> <h4 id=interpretation-of-last-argument>Interpretation of last argument<a class=headerlink href=#interpretation-of-last-argument title="Copy link to this section for reference">&para;</a></h4> <h4 id=recursion-assumed-for-mv-and-not-cp>Recursion assumed for <code>mv</code> and not <code>cp</code><a class=headerlink href=#recursion-assumed-for-mv-and-not-cp title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Some commands assume recursion while some don&rsquo;t.</li> <li>Let&rsquo;s setup our directory structure.</li> </ul> <pre><code class=language-terminal>~$ mkdir mydir
+~$ cp file1 mydir
+</code></pre> <ul> <li>Let&rsquo;s check for <code>cp</code></li> </ul> <pre><code class=language-terminal>~$ cp mydir mydir2
+cp: -r not specified; omitting directory 'mydir'
+~$ cp -r mydir mydir2
+</code></pre> <ul> <li>Note that most commands tell you what to do.</li> <li> <p>To take home, recursion is not assumed for <code>cp</code>.</p> </li> <li> <p>Let&rsquo;s check for <code>mv</code></p> </li> </ul> <pre><code class=language-terminal>~$ mv mydir mydir3
+</code></pre> <ul> <li>As you can see no error is generated.</li> <li>That means <code>mydir</code> is successfully renamed as <code>mydir3</code></li> </ul> <h2 id=links>Links<a class=headerlink href=#links title="Copy link to this section for reference">&para;</a></h2> <h3 id=ln><code>ln</code><a class=headerlink href=#ln title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>ln [-s] &lt;source&gt; &lt;linkname&gt;</code> : Create link for <code>source</code> as <code>linkname</code></li> </ul> <h4 id=symbolic-links>Symbolic Links<a class=headerlink href=#symbolic-links title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Inode number of source file and linkname are different.</li> <li><code>l</code>, the first character in long format of file denotes the file is symbolic link.</li> <li><code>-s</code> option is used to create symbolic link.</li> <li>To create a symbolic link (same as shortcut in Windows) for <code>file1</code> as <code>file0</code></li> </ul> <pre><code class=language-terminal>~$ ln -s file1 file0
+</code></pre> <ul> <li>Long list the <code>file0</code> to see the output.</li> </ul> <pre><code class=language-terminal>~$ ls -l file0
+lrwxrwxrwx 1 sanr sanr 5 Dec 19 08:28 file0 -&gt; file1
+</code></pre> <ul> <li>Print the inode numbers of <code>file1</code> and <code>file0</code></li> </ul> <pre><code>~$ ls -i file1 file0
+66488 file0  80500 file1
+</code></pre> <h4 id=hard-links>Hard Links<a class=headerlink href=#hard-links title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>ln &lt;source&gt; &lt;linkname&gt;</code> - Create hard link</li> <li>We have already come across this in <a href=/Week_1/Lecture2-3.md#hard-links>Week 1</a>.</li> <li>Let&rsquo;s take an example.</li> <li>To create a hard link for <code>file1</code> as <code>file11</code></li> </ul> <pre><code class=language-terminal>~$ ln file1 file11
+</code></pre> <ul> <li>See the long listing along with inode numbers.</li> </ul> <pre><code class=language-terminal>~$ ls -li file1 file11
+80500 -rw-rw-r-- 2 sanr sanr 0 Dec 18 20:20 file1
+80500 -rw-rw-r-- 2 sanr sanr 0 Dec 18 20:20 file11
+</code></pre> <ul> <li>As you can see here, number of hard links are two for <code>file1</code> and <code>file2</code> as both are same which contrasts with symbolic link.</li> <li>As long as number of hard links for a <em>file</em> &gt; 1 you can delete any file which points to the same hard link as <em>file</em>.</li> <li>X-device/X-cross storage hard links are forbidden.</li> <li>It is typically forbidden to create hard link for a directory.</li> </ul> <h2 id=file-sizes>File Sizes<a class=headerlink href=#file-sizes title="Copy link to this section for reference">&para;</a></h2> <h3 id=ls-s><code>ls -s</code><a class=headerlink href=#ls-s title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>ls -s &lt;file&gt;</code> - Print the size of <code>file</code>.</li> <li>Combine with <code>-h</code> to print in human readable format.</li> </ul> <h3 id=stat><code>stat</code><a class=headerlink href=#stat title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>stat &lt;file&gt;</code> - Shows statistics (file or file system status) on <code>file</code>.</li> <li>Typical output of <code>stat</code> for file <code>znew</code>.</li> </ul> <pre><code class=language-terminal>/usr/bin$ stat znew
+  File: znew
+  Size: 4577        Blocks: 10         IO Block: 4608   regular file
+Device: 1bh/27d Inode: 225090      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2022-12-18 15:12:06.475640237 +0200
+Modify: 2022-09-05 15:33:59.000000000 +0200
+Change: 2022-11-03 19:51:25.078671510 +0200
+ Birth: 2022-11-03 19:51:25.014673255 +0200
+</code></pre> <ul> <li>You can get the atomic output using <code>-c</code> option using <code>FORMAT</code>.</li> <li>For example, get textual and octal permissions on file <code>znew</code></li> </ul> <pre><code>/usr/bin$ stat  -c &quot;%a %A&quot; znew
+755 -rwxr-xr-x
+</code></pre> <ul> <li>To know more visit the <code>man</code> pages.</li> </ul> <h3 id=du><code>du</code><a class=headerlink href=#du title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>du &lt;file&gt;</code> - Estimate file space usage.</li> <li>To see the disk usage of <code>znew</code> file.</li> </ul> <pre><code class=language-terminal>/usr/bin$ du znew
+5       znew
+/usr/bin$ du -h znew
+5.0K    znew
+</code></pre> <ul> <li>Try to figure out the difference between output by <code>stat</code> and <code>du</code>. </li> </ul> <h3 id=roll-of-block-size>Roll of block size<a class=headerlink href=#roll-of-block-size title="Copy link to this section for reference">&para;</a></h3> <h3 id=df><code>df</code><a class=headerlink href=#df title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>df [-h]</code> - shows filesystem information in format [human readable] below.<blockquote> <p>Filesystem 1K-blocks Used Available Use% Mounted on</p> </blockquote> </li> </ul> <h2 id=in-memory-filesystems>In-memory Filesystems<a class=headerlink href=#in-memory-filesystems title="Copy link to this section for reference">&para;</a></h2> <ul> <li>These are special read-only filesytems, available in memory and not on hard disk.</li> <li>You can view these filesystems.</li> <li>These are directory structures to know more about the system.</li> </ul> <h3 id=proc><code>/proc</code><a class=headerlink href=#proc title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Older filesystem, but still useful.</li> <li>Used to store different processes.</li> <li>These file are just representaions, so file sizes it contains are zero.</li> <li>Useful files<ul> <li><code>cpuinfo</code> - stores cpu information.</li> <li><code>version</code> - stores system information, content similar to <a href=/Week_1/Lecture2-3.md#uname><code>uname</code></a> -a ` command.</li> <li><code>meminfo</code> - Diagnostic information about memory. Check <a href=/Week_1/Lecture2-3.md#free><code>free</code></a> command.</li> <li><code>partitions</code> - Disk partition information. Check <a href=#df><code>df</code></a> </li> <li><code>kcore</code> - The astronomical size ( 2 ^ 47 bits) tells the maximum virtual memory (47 bits) the current Linux OS is going to handle.</li> </ul> </li> <li>Directories named by <code>number</code><ul> <li>Each of these correspond to running processes. </li> <li>The <code>number</code> corresponds to the process id. </li> </ul> </li> </ul> <h3 id=sys><code>/sys</code><a class=headerlink href=#sys title="Copy link to this section for reference">&para;</a></h3> <ul> <li>In use since Kernel 2.6+.</li> <li>It&rsquo;s a well organized filesystem.</li> <li>Explore usb devices used in the machine.</li> </ul> <pre><code>/sys/bus/usb/devices$ ls
+1-0:1.0  2-0:1.0  2-1  2-1:1.0  2-2  2-2:1.0  usb1  usb2
+</code></pre> <ul> <li>Each number corresponds to a device.</li> <li>Let&rsquo;s check the <code>product</code> and <code>manufactures</code> of the usb device <code>2-1</code></li> </ul> <pre><code class=language-terminal>/sys/bus/usb/devices/2-1$ cat product
+VMware Virtual USB Mouse
+/sys/bus/usb/devices/2-1$ cat manufacturer
+</code></pre> <ul> <li>The VMWare is using its virtual USB mouse to connect the host machine mouse (touch pad) to the guest machine.</li> <li>Thus, these two commands help us to explore hardware attached to the machine.</li> </ul> <h4 id=type-of-options>Type of Options<a class=headerlink href=#type-of-options title="Copy link to this section for reference">&para;</a></h4> <ol> <li>UNIX options, which may be grouped and must be preceded by a dash.</li> <li>BSD options, which may be grouped and must not be used with a dash.</li> <li>GNU long options, which are preceded by two dashes.</li> </ol> <h2 id=hell-variables>$HELL Variables<a class=headerlink href=#hell-variables title="Copy link to this section for reference">&para;</a></h2> <ul> <li>The variables defined within shell in the command line environment.</li> <li>$hell variables are efficient medium of communication for two processes.</li> <li>They can also be made available to it&rsquo;s child processes.</li> <li>They are private to the shell they are defined in.</li> <li>$hell variables can also be used to store information in an intermediate form during processes.</li> <li>Commercial softwares can use shell variables to to know ports for which license is available.</li> <li>Hence, it is important to study them.</li> <li>Let&rsquo;s start.</li> <li>Before going ahead look at command below.</li> </ul> <hr> <h4 id=echo><code>echo</code><a class=headerlink href=#echo title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Display a line of text or value of a variable.</li> <li>Ignores multiple spaces when string is without quotes.</li> <li>Use quotes for string with multiple spaces.</li> <li>Use double quotes for variables.</li> <li>Accepts multi-line input.</li> <li>Print strings to screen.</li> </ul> <pre><code class=language-terminal>~$ echo hello, world
+hello, world
+</code></pre> <ul> <li>Print values of variables.</li> </ul> <pre><code class=language-terminal>~$ echo $HOME
+/home/groot
+~$ echo &quot;$HOME&quot;
+/home/groot
+</code></pre> <ul> <li>To suppress trailing newline, use <code>-n</code> option.</li> </ul> <pre><code class=language-terminal>~$ echo -n &quot;Hello&quot;
+Hello~$
+</code></pre> <ul> <li>To enable interpretation of <a href=#backslash-escapes>backslash escapes</a> use <code>-e</code> option.</li> </ul> <hr> <ul> <li>Conventionally shell variables are defined in uppercase.</li> <li>To refer to a shell variable use <code>$</code>.</li> </ul> <h3 id=frequently-used-shell-variables>Frequently Used Shell Variables<a class=headerlink href=#frequently-used-shell-variables title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>$USERNAME</code> or <code>$USER</code><ul> <li>Stores username of the logged in user.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo $USERNAME
+groot
+~$ echo &quot;User logged into the shell is: $USER&quot;
+User logged into the shell is: groot
+</code></pre> <ul> <li><code>$HOME</code> <ul> <li>Stores the path of the home directory.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo $HOME
+/home/groot
+</code></pre> <ul> <li><code>$HOSTNAME</code><ul> <li>Stores host name or name of the machine given in the file <code>/etc/hostname</code>.</li> <li>This a static file, if configured the network setting the file can be made dynamic. </li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo $HOSTNAME
+rich-linux
+</code></pre> <ul> <li><code>$PWD</code> <ul> <li>Stores the path of current directory. Same as <a href=/Week_1/Lecture2-3.md#pwd><code>pwd</code></a></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo $PWD
+/home/groot
+</code></pre> <ul> <li><code>$PATH</code> <ul> <li>Stores the path of commands used.</li> <li>Value is list of directories with <code>:</code> as delimiter.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo $PATH
+/home/sanr/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+</code></pre> <ul> <li>Escaping <code>$</code> <ul> <li>make <code>$</code> an ordinary character using <code>\</code></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ echo  &quot;hostname is \$HOSTNAME and user is $USERNAME&quot;
+hostname is $HOSTNAME and user is groot
+</code></pre> <h3 id=commands-to-inspect-shell-variables>Commands to Inspect Shell Variables<a class=headerlink href=#commands-to-inspect-shell-variables title="Copy link to this section for reference">&para;</a></h3> <h4 id=printenv><code>printenv</code><a class=headerlink href=#printenv title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Print all o part of environment.</li> </ul> <pre><code class=language-terminal>~$ printenv HOME
+/home/groot
+</code></pre> <h4 id=env><code>env</code><a class=headerlink href=#env title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Print the variables defined in shell</li> </ul> <h4 id=set><code>set</code><a class=headerlink href=#set title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Display the names and values of shell variables.</li> <li>set or unset values of set variables.</li> </ul> <h2 id=different-ways-of-executing-a-command>Different Ways of Executing a Command<a class=headerlink href=#different-ways-of-executing-a-command title="Copy link to this section for reference">&para;</a></h2> <ul> <li>Using command itself </li> </ul> <pre><code class=language-terminal>~$ date
+Wednesday 21 December 2022 06:20:23 PM EET
+~$ date -R
+Wed, 21 Dec 2022 18:21:43 +0200
+</code></pre> <ul> <li>Using commads binary path.</li> </ul> <pre><code class=language-terminal>~$ /usr/bin/date
+Wednesday 21 December 2022 06:23:34 PM EET
+</code></pre> <ul> <li>Executing from <code>/usr/bin</code></li> </ul> <pre><code class=language-terminal>/usr/bin$ ./date
+Wednesday 21 December 2022 06:25:50 PM EET
+</code></pre> <ul> <li>Using alias</li> </ul> <pre><code>~$ alias date=&quot;date -R&quot;
+~$ date
+Wed, 21 Dec 2022 18:22:10 +0200
+</code></pre> <ul> <li>Escaping alias using <code>\</code></li> </ul> <pre><code class=language-terminal>~$ \date
+Wednesday 21 December 2022 06:26:10 PM EET
+</code></pre> <h3 id=special-shell-variables>Special Shell Variables<a class=headerlink href=#special-shell-variables title="Copy link to this section for reference">&para;</a></h3> <table> <thead> <tr> <th style="text-align: center;">VARIABLE</th> <th style="text-align: left;">description</th> </tr> </thead> <tbody> <tr> <td style="text-align: center;"><code>$0</code></td> <td style="text-align: left;">name of the shell</td> </tr> <tr> <td style="text-align: center;"><code>$$</code></td> <td style="text-align: left;">process ID of the shell</td> </tr> <tr> <td style="text-align: center;"><code>$?</code></td> <td style="text-align: left;">exit/return code of previously run command/program</td> </tr> <tr> <td style="text-align: center;"><code>$-</code></td> <td style="text-align: left;">flags set in the bash shell</td> </tr> </tbody> </table> <h4 id=0><code>$0</code><a class=headerlink href=#0 title="Copy link to this section for reference">&para;</a></h4> <pre><code class=language-terminal>~$ echo $0
+bash
+</code></pre> <h4 id=_1><code>$$</code><a class=headerlink href=#_1 title="Copy link to this section for reference">&para;</a></h4> <ul> <li>see <a href=/Week_1/Lecture2-3.md#ps>ps</a></li> </ul> <pre><code class=language-terminal>~$ echo $$
+3423
+</code></pre> <h2 id=process-control><a href=/Week_2/Lecture5.md title="Linux Process Management">Process Control</a><a class=headerlink href=#process-control title="Copy link to this section for reference">&para;</a></h2> <h4 id=_2><a href=/Week_2/Lecture5.md#&amp;><code>&amp;</code></a><a class=headerlink href=#_2 title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Use to run a program in the background.</li> </ul> <h4 id=fg><a href=/Week_2/Lecture5.md#fg><code>fg</code></a><a class=headerlink href=#fg title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Bring the program to the foreground.</li> </ul> <h4 id=coproc><a href=/Week_2/Lecture5.md#coproc><code>coproc</code></a><a class=headerlink href=#coproc title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Run a program while also being able to use the shell.</li> </ul> <h4 id=jobs><a href=/Week_2/Lecture5.md#jobs><code>jobs</code></a><a class=headerlink href=#jobs title="Copy link to this section for reference">&para;</a></h4> <ul> <li>List all background jobs.</li> </ul> <h4 id=top><a href=/Week_2/Lecture5.md#top><code>top</code></a><a class=headerlink href=#top title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Live view of all running processes.</li> </ul> <h4 id=kill><a href=/Week_2/Lecture5.md#kill><code>kill</code></a><a class=headerlink href=#kill title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Kill running/stopped process or processes.</li> </ul> <h2 id=program-exit-codes><a href=/Week_2/Lecture5.md#more-on-program-exit-codes title="More on Program Exit Codes">Program Exit Codes</a><a class=headerlink href=#program-exit-codes title="Copy link to this section for reference">&para;</a></h2> <ul> <li><code>0</code> - success</li> <li><code>1</code> - failure</li> <li><code>2</code> - misuse of shell builtins when the permissions are not adequate</li> <li><code>126</code> - command can not be executed</li> <li><code>127</code> - command not found</li> <li><code>130</code> - processes killed using <code>ctrl + C</code> or <code>^C</code></li> <li><code>137</code> - processes killed using <code>kill -9 &lt;pid&gt;</code></li> <li>Exit codes have values between <code>0</code> and <code>255</code>.</li> </ul> <h4 id=_3><code>$?</code><a class=headerlink href=#_3 title="Copy link to this section for reference">&para;</a></h4> <pre><code>~$ true
+~$ echo $?
+0
+~$ false
+~$ echo $?
+1
+</code></pre> <h2 id=flags-set-in-bash><a href=/Week_2/Lecture5.md#more-on-flags-set-in-bash>Flags set in bash</a><a class=headerlink href=#flags-set-in-bash title="Copy link to this section for reference">&para;</a></h2> <ul> <li><code>h</code> - locate and hash commands</li> <li><code>B</code> - brace expansion enabled</li> <li><code>i</code> - interactive mode</li> <li><code>m</code> - job control enabled (jobs can be taken foreground or background)</li> <li><code>H</code> - <code>!</code> style history substitution enabled</li> <li><code>s</code> - commands are read from stdin</li> <li><code>c</code> - commands are read from arguments<br> <code>echo $-</code></li> </ul> <h2 id=shell-variables-part-1>Shell Variables Part - 1<a class=headerlink href=#shell-variables-part-1 title="Copy link to this section for reference">&para;</a></h2> <ul> <li>Creation, inspection, modifictaion, lists&hellip;</li> </ul> <h3 id=creating-a-variable>Creating a Variable<a class=headerlink href=#creating-a-variable title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>myvar="value string"</code></li> <li>Variable name can have mix of alpha-numeric chars and _. <ul> <li><code>myvar</code>, <code>MyVar</code>, <code>My10Var</code> and <code>MyVar_1</code> are valid</li> </ul> </li> <li>It does not start with a number.<ul> <li><code>10myvar</code> is invalid</li> </ul> </li> <li>There are no spaces around <code>=</code> (assignment operator).<ul> <li><code>myvar = 10</code> is invalid</li> </ul> </li> <li>A value can be number, string or a <code>`command`</code> (command substitution).</li> <li>Safer to enclose string value within double quotes.</li> <li><code>${myvar}</code> is more convenient for string concatenation than <code>$myvar</code></li> </ul> <h4 id=examples>Examples<a class=headerlink href=#examples title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Create and display variable <code>myvar</code> with value <code>10</code></li> </ul> <pre><code class=language-terminal>~$ myvar=10
+~$ echo $myvar
+10
+</code></pre> <ul> <li>Change value of variable <code>myvar</code></li> </ul> <pre><code class=language-terminal>~$ myvar=&quot;hello world&quot;
+~$ echo $myvar
+hello world
+</code></pre> <ul> <li>Effect when value not within quotes.<ul> <li>variable is assigned a value null</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ myvar=hello world
+Command 'world' not found.
+~$ echo $?
+127
+</code></pre> <ul> <li><code>command</code> as value of a variable. (<code>command</code> is any valid command)<ul> <li>store value of <code>date</code> in variable <code>myvar</code></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ mydate=` date ` 
+~$ echo $myvar
+Thursday 22 December 2022 12:23:07 PM EET
+~$ myvar=` echo Today is Thursday `
+Today is Thursday
+</code></pre> <h3 id=exporting-a-variable>Exporting a Variable<a class=headerlink href=#exporting-a-variable title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Make variable available to the subshell.</li> <li>It can be done in following ways<ul> <li><code>export myvar="value string"</code></li> <li><code>myvar="value string" ;</code><br> <code>export myvar</code></li> </ul> </li> </ul> <h4 id=examples_1>Examples<a class=headerlink href=#examples_1 title="Copy link to this section for reference">&para;</a></h4> <ul> <li>By default variable is not available for child shell</li> </ul> <pre><code class=language-terminal>~$ myvar=3.14
+~$ bash
+~$ echo $myvar
+
+</code></pre> <ul> <li>Make the variable available in child shell<ul> <li>Changing the value of variable in child shell does not affect it&rsquo;s value in parent shell</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ export myvar=3.14
+~$ bash
+~$ echo $myvar
+3.14
+</code></pre> <h3 id=using-variable-values>Using Variable Values<a class=headerlink href=#using-variable-values title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Refering by variable name using <code>$</code>.<ul> <li><code>echo $myvar</code></li> <li><code>echo ${myvar}</code></li> <li><code>echo "${myvar}_something"</code></li> </ul> </li> </ul> <h4 id=example>Example<a class=headerlink href=#example title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Accessing variable as <code>${myvar}</code> and without <code>$myvar</code><ul> <li>As stated above <code>_</code> can be part of variable name.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ myvar=FileName
+~$ echo &quot;$myvar.txt&quot;
+FileName.txt
+~$ echo &quot;$myvar_txt&quot;
+
+~$ echo ${myvar}_txt
+FileName_txt
+</code></pre> <h3 id=removing-a-variable>Removing a Variable<a class=headerlink href=#removing-a-variable title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Delete the variable.<ul> <li><code>unset myvar</code></li> </ul> </li> <li>Example</li> </ul> <pre><code class=language-terminal>~$ unset myvar
+~$ echo $myvar
+
+</code></pre> <h3 id=removing-value-of-a-variable>Removing Value of a Variable<a class=headerlink href=#removing-value-of-a-variable title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Set the value of variable as <code>null</code><ul> <li><code>myvar=</code></li> </ul> </li> <li>Example</li> </ul> <pre><code class=language-terminal>~$ myvar=
+~$ echo $myvar
+
+</code></pre> <p>.............................................................</p> <h3 id=test-if-a-variable-is-set>Test if a Variable is Set<a class=headerlink href=#test-if-a-variable-is-set title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>-v varname</code><ul> <li>True if the shell variable <code>varname</code> is set and is name reference. </li> </ul> </li> </ul> <pre><code class=language-bash>[[ -v myvar ]];
+echo $?
+</code></pre> <ul> <li>Return codes:<ul> <li><code>0</code> : success (variable <code>myvar</code> is set)</li> <li><code>1</code> : failure (variable <code>myvar</code> is not set) </li> </ul> </li> <li>Example</li> </ul> <pre><code class=language-terminal>~$ unset myvar
+~$ [[ -v myvar ]];
+~$ echo $?
+1
+~$ myvar=10
+~$ [[ -v myvar ]];
+~$ echo $?
+0
+</code></pre> <h3 id=test-if-a-variable-is-not-set>Test if a Variable is <em>Not</em> Set<a class=headerlink href=#test-if-a-variable-is-not-set title="Copy link to this section for reference">&para;</a></h3> <ul> <li><code>-z string</code> <ul> <li>True if the length of the string is <strong>z</strong>ero.</li> </ul> </li> </ul> <pre><code class=language-bash>[[ -z ${myvar} ]];
+echo $?
+</code></pre> <ul> <li>Return codes:<ul> <li><code>0</code> : success (If the length of the string <code>${myvar}</code> is zero.)</li> <li><code>1</code> : failure (If the length of the string <code>${myvar}</code> is not zero.) </li> </ul> </li> <li>Example</li> </ul> <pre><code class=language-terminal>~$ unset myvar
+~$ [[ -z ${myvar} ]];
+~$ echo $?
+0
+~$ myvar=10
+~$ [[ -z ${myvar} ]];
+~$ echo $?
+1
+</code></pre> <h3 id=substitute-default-value>Substitute Default Value<a class=headerlink href=#substitute-default-value title="Copy link to this section for reference">&para;</a></h3> <ul> <li>If the variable <code>myvar</code> is not set (<code>:-</code>), use <code>"default"</code> as temporary value.</li> </ul> <pre><code class=language-bash>echo ${myvar:-&quot;default&quot;}
+</code></pre> <ul> <li>There are no spaces around <code>:-</code></li> <li>Pseudocode : <blockquote> <p>if <code>myvar</code> is set:</p> <blockquote> <p>display its value</p> </blockquote> <p>else:</p> <blockquote> <p>display &ldquo;default&rdquo;</p> </blockquote> </blockquote> </li> </ul> <h4 id=examples_2>Examples<a class=headerlink href=#examples_2 title="Copy link to this section for reference">&para;</a></h4> <pre><code class=language-terminal>~$ myvar=
+~$ echo ${myvar:-hello}
+hello
+~$ echo ${myvar:-&quot;myvar is not set&quot;}
+myvar is not set
+~$ echo ${myvar}
+
+~$ myvar=&quot;HELLO&quot;
+~$  ${myvar:-hello}
+HELLO
+</code></pre> <h3 id=set-default-value>Set Default Value<a class=headerlink href=#set-default-value title="Copy link to this section for reference">&para;</a></h3> <ul> <li>If the variable <code>myvar</code> is <em>not</em> set, then set <code>"default"</code> as it&rsquo;s value.</li> </ul> <pre><code class=language-bash>echo ${myvar:=&quot;default&quot;}
+</code></pre> <ul> <li>There are no spaces around <code>:=</code></li> <li>Pseudocode : <blockquote> <p>if <code>myvar</code> is set:</p> <blockquote> <p>display its value</p> </blockquote> <p>else:</p> <blockquote> <p>set &ldquo;default&rdquo; as its value</p> <p>display its new value</p> </blockquote> </blockquote> </li> </ul> <h4 id=examples_3>Examples<a class=headerlink href=#examples_3 title="Copy link to this section for reference">&para;</a></h4> <pre><code class=language-terminal>~$ myvar=
+~$ echo ${myvar:=hello}
+hello
+~$ echo ${myvar:=HELLO}
+hello
+~$ echo ${myvar}
+hello
+</code></pre> <h3 id=reset-value-if-variable-is-set>Reset Value if Variable is Set<a class=headerlink href=#reset-value-if-variable-is-set title="Copy link to this section for reference">&para;</a></h3> <ul> <li>If the variable <code>myvar</code> is set, then set &ldquo;default&rdquo; as its temporary value.</li> </ul> <pre><code class=language-bash>echo ${myvar:+&quot;default&quot;}
+</code></pre> <ul> <li>There are no spaces around <code>:+</code></li> <li>Pseudocode : <blockquote> <p>if <code>myvar</code> is set:</p> <blockquote> <p>display &ldquo;default&rdquo; </p> </blockquote> <p>else:</p> <blockquote> <p>display &ldquo;&rdquo;</p> </blockquote> </blockquote> </li> </ul> <h4 id=example_1>Example<a class=headerlink href=#example_1 title="Copy link to this section for reference">&para;</a></h4> <pre><code>~$ myvar=apple
+~$ echo ${myvar:+APPLE}
+APPLE
+~$ echo $myvar
+apple
+~$ unset myvar
+echo ${myvar:+APPLE}
+
+</code></pre> <h3 id=user-defined-error-message-alert>User Defined Error Message (Alert)<a class=headerlink href=#user-defined-error-message-alert title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Display user defined error when variable is not set.</li> </ul> <pre><code class=language-bash>echo ${myvar:?&quot;myvar is not set&quot;}
+</code></pre> <h4 id=example_2>Example<a class=headerlink href=#example_2 title="Copy link to this section for reference">&para;</a></h4> <pre><code>~$ unset myvar
+~$ echo ${myvar:?&quot;myvar is not set&quot;}
+bash: myvar: myvar is not set
+</code></pre> <h3 id=list-of-variable-names>List of Variable Names<a class=headerlink href=#list-of-variable-names title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Print the environment variable names matching <em>init_chars</em>.</li> <li>We can access these variables using the methods we have seen already.</li> </ul> <pre><code class=language-bash>echo ${!init_chars*}
+</code></pre> <h4 id=example_3>Example<a class=headerlink href=#example_3 title="Copy link to this section for reference">&para;</a></h4> <ul> <li>List of names of shell variables that start with <code>H</code> and <code>HI</code>.</li> </ul> <pre><code class=language-bash>~$ echo ${!H*}
+HISTCMD HISTCONTROL HISTFILE HISTFILESIZE HISTSIZE HOME HOSTNAME HOSTTYPE
+~$ echo ${!HI*}
+HISTCMD HISTCONTROL HISTFILE HISTFILESIZE HISTSIZE
+~$ echo ${HISTFILE}
+/home/groot/.bash_history
+</code></pre> <h3 id=length-of-string-value>Length of String Value<a class=headerlink href=#length-of-string-value title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Display length of the string value of the variable <code>myvar</code>.</li> <li>If <code>myvar</code> is not set, display <code>0</code>.</li> </ul> <pre><code class=language-bash>echo ${#myvar}
+</code></pre> <h4 id=example_4>Example<a class=headerlink href=#example_4 title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Getting length of string returned by <code>date</code> command stored in a variable.</li> </ul> <pre><code class=language-terminal>~$ mydate=` date `
+~$ echo ${mydate}
+Thursday 22 December 2022 04:50:31 PM EET
+~$ echo ${#mydate}
+41
+~$ myvar=
+~$ echo ${#myvar}
+0
+</code></pre> <h3 id=string-operations>String Operations<a class=headerlink href=#string-operations title="Copy link to this section for reference">&para;</a></h3> <h4 id=slice-of-string-value>Slice of String Value<a class=headerlink href=#slice-of-string-value title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Provide <em>offset</em> and <em>slice_length</em> separated by <code>:</code>.</li> <li><code>${varname:offset:slice_length}</code></li> <li>Display <em>4 chars</em> of the string value of the variable <code>myvar</code> skipping first <em>5 chars</em>.</li> <li>If <em>slice_length &gt; ${#varname}</em>, <em>slice_length = ${#varname}</em>.</li> <li>Offset value can be negative.</li> </ul> <pre><code class=language-bash>echo ${myvar:5:4}
+</code></pre> <h5 id=examples_4>Examples<a class=headerlink href=#examples_4 title="Copy link to this section for reference">&para;</a></h5> <ul> <li>Extract part of string by using offset from the beginning.</li> </ul> <pre><code class=language-terminal>~$ myvar=abcdefgh12345678
+~$ echo ${myvar:3:3}
+def
+~$ echo ${mydate:0:6}
+Sunday
+</code></pre> <ul> <li>Extract part of string by using offset from the end.<ul> <li>notice <code>&lt;space&gt;</code> between operator <code>:</code> and <code>-</code> sign.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ myvar=abcdefgh12345678
+~$ echo ${myvar: -3:3}
+678
+~$ echo ${mydate: -3:2}
+67
+</code></pre> <ul> <li>Using command and variable to obtain the same result. </li> </ul> <pre><code class=language-terminal>~$ date
+Thursday 22 December 2022 05:10:53 PM EET
+~$ date +&quot;%d %B %Y&quot;
+22 December 2022
+~$ mydate=` date `
+$ echo ${mydate:9:16}
+22 December 2022
+</code></pre> <h4 id=remove-prefix-matching-a-pattern>Remove Prefix Matching a Pattern<a class=headerlink href=#remove-prefix-matching-a-pattern title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Match the string from the beginning.</li> <li>Pattern is regex (later)</li> <li><code>*</code> matches any number of characters.</li> <li>Match once using <code>##</code></li> </ul> <pre><code class=language-bash>echo ${myvar#pattern}
+</code></pre> <pre><code class=language-terminal>~$ myvar=MyFile.tar.gz
+~$ echo ${myvar#*.}
+tar.gz
+~$ echo ${myvar#*.*.}
+gz
+</code></pre> <ul> <li>Match max possible using <code>###</code></li> </ul> <pre><code class=language-bash>echo ${myvar##pattern}
+</code></pre> <pre><code class=language-terminal>~$ myvar=MyFile.tar.gz
+~$ echo ${myvar##*.}
+gz
+</code></pre> <h4 id=remove-suffix-matching-a-pattern>Remove Suffix Matching a Pattern<a class=headerlink href=#remove-suffix-matching-a-pattern title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Match the string from the end.</li> <li>Match once using <code>%</code></li> </ul> <pre><code class=language-bash>echo ${myvar%pattern}
+</code></pre> <pre><code class=language-terminal>~$ myvar=MyFile.tar.gz
+~$ echo ${myvar%.*}
+MyFile.tar
+~$ echo ${myvar%.*.*}
+MyFile
+</code></pre> <ul> <li>Match max possible using <code>%%</code></li> </ul> <pre><code class=language-bash>echo ${myvar%%pattern}
+</code></pre> <pre><code class=language-terminal>~$ myvar=MyFile.tar.gz
+~$ echo ${myvar%%.*}
+MyFile
+~$ echo ${myvar%%.*}.${myvar##*.}
+MyFile.gz
+~$ echo ${myvar%%.*}.zip
+MyFile.zip
+</code></pre> <h4 id=replace-matching-pattern>Replace Matching Pattern<a class=headerlink href=#replace-matching-pattern title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Replace matching pattern from anywhere in the string.</li> <li><em>pattern</em> and <strong>string</strong> are separated with <code>/</code></li> <li>Match <em>pattern</em> once (<code>/</code>) and replace with <strong>string</strong>.</li> </ul> <pre><code class=language-bash>echo ${myvar/pattern/string}
+</code></pre> <ul> <li>Example 1 - Change only first occurrence of <em>pattern</em> with <strong>string</strong></li> </ul> <pre><code class=language-terminal>~$ myvar=MyFile.SomeThing.jpeg
+~$ echo ${myvar/e/E}
+MyFilE.SomeThing.jpeg
+</code></pre> <ul> <li>Match <em>pattern</em> max possible (<code>//</code>) and replace with <strong>string</strong>.</li> </ul> <pre><code class=language-bash>echo ${myvar//pattern/string}
+</code></pre> <pre><code class=language-terminal>~$ echo ${myvar//e/E}
+MyFilE.SomEThing.jpEg
+~$ myvar=MyjpegFile.Something.jpeg
+~$ echo ${myvar//jpeg/jpg}
+MyjpgFile.Something.jpg
+~$ myfname=` echo ${myvar//jpeg/jpg} `
+~$ echo $newfname
+MyjpgFile.Something.jpg
+</code></pre> <h4 id=replace-matching-pattern-by-location>Replace Matching Pattern by Location<a class=headerlink href=#replace-matching-pattern-by-location title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Match and replace the prefix (<code>/##</code>)<ul> <li>match at the <em>beginning</em></li> </ul> </li> </ul> <pre><code class=language-bash>echo ${myvar/#pattern/string}
+</code></pre> <pre><code class=language-terminal>~$ echo ${myvar/#M/m}
+myFile.SomeThing.jpeg
+~$ mydate=`date`
+~$ newdate=` echo ${mydate/#*day }`
+~$ echo $newdate
+22 December 2022 05:10:53 PM EET
+</code></pre> <ul> <li>Match and replace the suffix (<code>/%</code>)<ul> <li>match at the <em>end</em></li> </ul> </li> </ul> <pre><code class=language-bash>echo ${myvar/%pattern/string}
+</code></pre> <pre><code class=language-terminal>~$ echo ${myvar/%jpeg/jpg}
+MyFile.SomeThing.jpg
+</code></pre> <h4 id=changing-case-to-lower-case>Changing Case to Lower Case<a class=headerlink href=#changing-case-to-lower-case title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Uses <code>,</code> (comma) symbol.</li> <li>Changes only view and not the value.</li> <li>Change first character to lower case using <code>,</code></li> </ul> <pre><code class=language-bash>echo ${myvar,}
+</code></pre> <pre><code class=language-terminal>~$ mymonth=&quot;MARGALI&quot;
+~$ echo ${mymonth,}
+mARGALI
+</code></pre> <ul> <li>Change all character to lower case using <code>,,</code></li> </ul> <pre><code class=language-bash>echo ${myvar,,}
+</code></pre> <pre><code class=language-terminal>~$ echo ${mymonth,,}
+margali
+</code></pre> <h4 id=changing-case-to-upper-case>Changing Case to Upper Case<a class=headerlink href=#changing-case-to-upper-case title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Uses <code>^</code> (caret) symbol.</li> <li>Changes only view and not the value.</li> <li>Change first character to Upper case using <code>^</code></li> </ul> <pre><code class=language-bash>echo ${myvar^}
+</code></pre> <pre><code class=language-terminal>~$ mymonth=&quot;margali&quot;
+~$ echo ${mymonth^}
+Margali
+</code></pre> <ul> <li>Change all characters to UPPER case using <code>^^</code></li> </ul> <pre><code class=language-bash>echo ${myvar^^}
+</code></pre> <pre><code class=language-terminal>~$ mymonth=&quot;margali&quot;
+~$ echo ${mymonth^^}
+MARGALI
+</code></pre> <h3 id=set-or-unset-attributes-on-value-types>Set or Unset Attributes on Value Types<a class=headerlink href=#set-or-unset-attributes-on-value-types title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Attributes are some restrictions.</li> <li><code>declare [option] varname</code></li> <li><code>declare [option] varname=value...</code></li> <li><code>-</code> is used to set attribute and <code>+</code> is used to remove attribute.</li> </ul> <h4 id=options-which-set-and-unset-attributes>Options which set and unset attributes:<a class=headerlink href=#options-which-set-and-unset-attributes title="Copy link to this section for reference">&para;</a></h4> <ul> <li><code>-i</code> : Can only assign <code>integer</code> values, strings converted to integer 0.</li> </ul> <pre><code class=language-bash>declare -i myvar
+</code></pre> <pre><code class=language-terminal>~$ declare -i mynum=1729
+~$ echo $mynum
+1729
+~$ mynum=&quot;hello world&quot;
+~$ echo $mynum
+0
+</code></pre> <ul> <li><code>+i</code> : Remove integer attribute/restriction</li> </ul> <pre><code class=language-bash>declare +i myvar
+</code></pre> <pre><code class=language-terminal>~$ declare +i mynum
+~$ mynum=&quot;hello world&quot;
+~$ echo $mynum
+hello world
+</code></pre> <ul> <li><code>-l</code> : Convert value to lower case on assignment.</li> </ul> <pre><code class=language-bash>declare -l myvar
+</code></pre> <pre><code class=language-terminal>~$ declare -l myvar=&quot;HELLO WORLD&quot;
+~$ echo ${myvar}
+hello world
+</code></pre> <ul> <li><code>+l</code> : Remove lower case restriction.</li> </ul> <pre><code class=language-bash>declare +l myvar
+</code></pre> <ul> <li><code>-u</code> : Convert value to upper case on assignment.</li> </ul> <pre><code class=language-bash>declare -u myvar
+</code></pre> <pre><code class=language-terminal>~$ declare -u MYVAR=&quot;hello world&quot;
+~$ echo ${MYVAR}
+HELLO WORLD
+</code></pre> <ul> <li><code>+u</code> : Remove upper case restriction.</li> </ul> <pre><code class=language-bash>declare +u myvar
+</code></pre> <ul> <li><code>-r</code> : Make the variable read only. <code>+</code> can not be used to remove this attribute.</li> </ul> <pre><code class=language-bash>declare -r myvar
+</code></pre> <pre><code class=language-terminal>~$ declare -r PI=3.142
+~$ echo $PI
+3.142
+~$ PI=2.142
+bash: PI: readonly variable
+~$ declare +r PI
+bash: declare: PI: readonly variable
+</code></pre> <h3 id=indexed-arrays>Indexed Arrays<a class=headerlink href=#indexed-arrays title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Declare an indexed array <code>arr</code> using <code>-a</code> </li> </ul> <pre><code class=language-bash>declare -a arr
+</code></pre> <pre><code class=language-terminal>~$ declare -a arr
+</code></pre> <h4 id=indexed-array-operations>Indexed Array Operations<a class=headerlink href=#indexed-array-operations title="Copy link to this section for reference">&para;</a></h4> <ul> <li>Set value of element with some index in the array.</li> </ul> <pre><code class=language-bash>arr[0]=&quot;value&quot;
+</code></pre> <pre><code class=language-terminal>~$ arr[0]=Sunday
+~$ arr[1]=Monday
+</code></pre> <ul> <li>Access value of element with index 0 in the array.</li> </ul> <pre><code class=language-bash>echo ${arr[0]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${arr[0]}
+Sunday
+~$ echo $arr
+Sunday
+~$ 
+</code></pre> <ul> <li>Number of elements in the array (<code>@</code> : all elements).</li> </ul> <pre><code class=language-bash>echo ${#arr[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${#arr[@]}
+2
+</code></pre> <ul> <li>Display all indices used. (Indices in bash array can be sparse.)</li> </ul> <pre><code class=language-bash>echo ${!arr[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${!arr[@]}
+0 1
+</code></pre> <ul> <li>Diplay values of all elements in the array.</li> </ul> <pre><code class=language-bash>echo ${arr[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${arr[@]}
+Sunday Monday
+</code></pre> <ul> <li>Array indices are sparse<ul> <li>indices are sorted in natural order.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ arr[100]=NotToBeDay
+~$ echo ${arr[@]}
+Sunday Monday NotToBeDay
+$ echo ${!arr[@]}
+0 1 100
+</code></pre> <ul> <li>Delete element with index 100 in the array</li> </ul> <pre><code class=language-bash>unset 'arr[100]'
+</code></pre> <pre><code class=language-terminal>~$ unset 'arr[100]'
+~$ echo ${arr[@]}
+Sunday Monday
+</code></pre> <ul> <li>Append an element with a value to the end of the array.<ul> <li>Multiple elements can be separated with space</li> </ul> </li> </ul> <pre><code class=language-bash>arr+=(&quot;value&quot;)
+</code></pre> <pre><code class=language-terminal>~$ arr+=(Tuesday)
+~$ echo ${arr[@]}
+Sunday Monday Tuesday
+</code></pre> <ul> <li>Array declaration and initialization<ul> <li><code>&lt;space&gt;</code> as separator.</li> <li>indices start with 0</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ declare -a weekdays=(Sunday Monday Tuesday Wednesday Thursday Friday Saturday)
+~$ echo ${!weekdays[@]}
+0 1 2 3 4 5 6
+~$ echo ${weekdays[@]}
+Sunday Monday Tuesday Wednesday Thursday Friday Saturday
+</code></pre> <ul> <li><code>ls</code> command output into array</li> </ul> <pre><code class=language-terminal>~$ declare -a arr
+~$ arr=(` ls `)
+</code></pre> <h3 id=associative-arrays>Associative Arrays<a class=headerlink href=#associative-arrays title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Declare an associative array or hash using <code>-A</code></li> </ul> <pre><code class=language-bash>declare -A hash
+</code></pre> <pre><code class=language-terminal>~$ declare -A hash
+</code></pre> <h4 id=associative-arrays-operations>Associative Arrays Operations<a class=headerlink href=#associative-arrays-operations title="Copy link to this section for reference">&para;</a></h4> <ul> <li>set value of element with index <code>"a"</code> in the array.</li> </ul> <pre><code class=language-bash>hash[&quot;a&quot;]=&quot;value&quot;
+</code></pre> <pre><code class=language-terminal>~$ hash[0]=&quot;Amul&quot;
+~$ hash[1]=&quot;Gokul&quot;
+~$ hash[&quot;city&quot;]=&quot;Madras&quot;
+</code></pre> <ul> <li>Access value of element with index <code>"a"</code> in the array.</li> </ul> <pre><code class=language-bash>echo ${hash[&quot;a&quot;]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${hash[&quot;city&quot;]}
+Madras
+</code></pre> <ul> <li>Number of elements in the array (<code>@</code> : all elements).</li> </ul> <pre><code class=language-bash>echo ${#hash[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${#hash[@]}
+3
+</code></pre> <ul> <li>Display all indices used. (Indices in bash array can be sparse.)</li> </ul> <pre><code class=language-bash>echo ${!hash[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${!hash[@]}
+0 1 city
+</code></pre> <ul> <li>Diplay values of all elements in the array.</li> </ul> <pre><code class=language-bash>echo ${hash[@]}
+</code></pre> <pre><code class=language-terminal>~$ echo ${hash[@]}
+Amul Gokul Madras
+</code></pre> <ul> <li>Delete element with index <code>"a"</code> in the array</li> </ul> <pre><code class=language-bash>unset 'hash[&quot;a&quot;]'
+</code></pre> <pre><code class=language-terminal>~$ unset 'hash[&quot;city&quot;]'
+~$ echo ${hash[@]}
+Amul Gokul
+</code></pre> <p>Shell Variable Manipulations are FAST! </p> <h2 id=linux-process-management>Linux Process Management<a class=headerlink href=#linux-process-management title="Copy link to this section for reference">&para;</a></h2> <ul> <li>Helps to switch between tasks while we are in the command line environment.</li> </ul> <h3 id=sleep><code>sleep</code><a class=headerlink href=#sleep title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Delay for a specified amount (<code>NUMBER</code>) of time.</li> </ul> <pre><code class=language-bash>sleep NUMBER
+</code></pre> <ul> <li>To <code>sleep</code> for 10 seconds.</li> </ul> <pre><code class=language-terminal>~$ sleep 10
+
+</code></pre> <p>We will use <code>sleep</code> a simple process to demonstrate Linux process management.</p> <h3 id=_4><code>&amp;</code><a class=headerlink href=#_4 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>A process is run in the background.</li> </ul> <pre><code class=language-bash>command &amp;
+</code></pre> <pre><code class=language-terminal>~$ sleep 30 &amp;
+[1] 5477
+</code></pre> <ul> <li><code>[1]</code> denotes the command number that is pushed to background. Not to be confused with <code>5477</code> which is <code>PID</code></li> </ul> <h3 id=coproc_1><code>coproc</code><a class=headerlink href=#coproc_1 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Bash builtin command to create interactive asynchronous process.</li> <li> <p>The program runs asynchronously and can listen to standard input and give back standard output on need.</p> </li> <li> <p>Run command(s) in an executing shell. <code>NAME</code> is optional, default name is <code>COPROC</code></p> </li> </ul> <pre><code class=language-bash>coproc [NAME] { command; }
+</code></pre> <ul> <li>Write to a specific coprocess stdin</li> </ul> <pre><code class=language-bash>echo &quot;input&quot; &gt;&amp;&quot;${NAME[1]}&quot;
+</code></pre> <ul> <li>Read from a specific coprocess stdout</li> </ul> <pre><code class=language-bash>read varname &lt;&amp;&quot;${NAME[0]}&quot;
+</code></pre> <ul> <li>Create a coprocess running <code>bc</code></li> </ul> <pre><code class=language-terminal>~$ coproc BC { bc --mathlib; }; ## creates a coprocess
+[1] 3820
+~$ echo &quot;22/7&quot; &gt;&amp;&quot;${BC[1]}&quot;     ## write input to coprocess  
+~$ read output &lt;&amp;&quot;${BC[0]}&quot; ## read output from coprocess
+~$ echo $output ## echo the read output.
+3.14285714285714285714
+</code></pre> <ul> <li> <p>run <code>ps --forest</code> to see the process tree.</p> </li> <li> <p>Run command <code>sleep 10</code> as a coprocess.</p> <ul> <li>command run within the same shell.</li> <li>process name can not be given.</li> <li>default name is used.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ coproc sleep 10
+[1] 5499
+~$ 
+[1]+    Done                coproc COPROC sleep 10
+</code></pre> <h3 id=fg_1><code>fg</code><a class=headerlink href=#fg_1 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Bring a recent process running in the background to the foreground.</li> </ul> <pre><code class=language-terminal>~$ sleep 30 &amp;
+[1] 5510
+~$ fg
+sleep 30
+
+</code></pre> <h3 id=jobs_1><code>jobs</code><a class=headerlink href=#jobs_1 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>List the processes running in the background by the user.</li> </ul> <pre><code class=language-terminal>~$ coproc sleep 30
+[1] 5583
+~$ jobs
+[1]+  Running                 coproc COPROC sleep 30 &amp;
+</code></pre> <h3 id=top_1><code>top</code><a class=headerlink href=#top_1 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Prints summary and live snapshots of processes running onto the screen.</li> <li>It is in decreasing order of CPU utilization <code>%CPU</code>.</li> <li>Use <code>q</code> key or <code>^C</code> to quit, <code>^Z</code> to suspend it (move to background). </li> </ul> <pre><code class=language-bash>top
+</code></pre> <h3 id=kill_1><code>kill</code><a class=headerlink href=#kill_1 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Kill a command using it&rsquo;s process id.</li> </ul> <pre><code class=language-bash>kill -9 &lt;process id&gt;
+</code></pre> <pre><code class=language-terminal>~$ coproc sleep 10
+[1] 5507
+~$ kill -9 5530
+~$
+[1]+    Killed              coproc COPROC sleep 10      
+</code></pre> <h3 id=_5><code>$!</code><a class=headerlink href=#_5 title="Copy link to this section for reference">&para;</a></h3> <ul> <li>It&rsquo;s an environment variable which stores the <code>PID</code> of the last process that is running/has run in the background.</li> <li>The value persits even if the process is finished.</li> </ul> <h2 id=more-on-program-exit-codes>More on <a href=/Week_2/Lecture2.md#program-exit-codes>Program Exit Codes</a><a class=headerlink href=#more-on-program-exit-codes title="Copy link to this section for reference">&para;</a></h2> <ul> <li>If a command is run successfully then error code is <code>0</code>.</li> </ul> <pre><code>~$ echo hello
+hello
+~$ echo $? 
+0
+</code></pre> <ul> <li>If a program/command has failed (like permission error) then error code is <code>1</code>.</li> </ul> <pre><code class=language-terminal>/$ touch file1
+touch: cannot touch 'file1': Permission denied
+/$ echo $?
+1
+
+</code></pre> <ul> <li>If there is misuse of shell builtins, then error code is <code>2</code></li> </ul> <pre><code class=language-terminal>~$ ls -w
+ls: option requires an argument -- 'w'
+Try 'ls --help' for more information.
+~$ echo $?
+2
+~$ help -h
+bash: help: -h: invalid option
+help: usage: help [-dms] [pattern ...]
+~$ echo $?
+2
+</code></pre> <ul> <li>If the command can not be executed then error code is <code>126</code><ul> <li><code>file1</code> is not executable.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ stat -c &quot;%A&quot; file1
+-rw-rw-r--
+~$ ./file1; echo $?
+bash: ./file1: Permission denied
+126
+</code></pre> <ul> <li>If the command is not found then the error code is <code>127</code></li> </ul> <pre><code class=language-terminal>~$ daet
+</code></pre> <p>Very big output.</p> <pre><code class=language-terminal>~$ echo $?
+127
+</code></pre> <ul> <li>If the command is killed/inturrupted with <code>^C</code>, then the error code is <code>130</code></li> </ul> <pre><code class=language-terminal>~$ sleep 30
+^C
+~$ echo $?
+130
+</code></pre> <ul> <li>If the process in some other shell is killed using <code>kill -9</code> command, then the error code is <code>137</code> </li> </ul> <p>Terminal 1 : Iterative output of <code>top</code> command </p> <pre><code class=language-terminal>~$ top
+</code></pre> <p>Terminal 2 : Kill command <code>top</code> running in Terminal 1.</p> <pre><code class=language-terminal>~$ kill -9 2267
+~$
+</code></pre> <p>Terminal 1 : Response</p> <pre><code class=language-terminal>Killed
+~$ echo $?
+137
+</code></pre> <ul> <li>Other exit codes<ul> <li>Returns exit code modulo 256 on exit code greater than 255.</li> </ul> </li> </ul> <pre><code class=language-terminal>~$ bash -c &quot;echo \$$; exit 3243;&quot;
+6669
+~$ echo $?
+171
+</code></pre> <p>Exit codes are useful when in a program you want to run a process based on exit code of other process.</p> <h2 id=more-on-flags-set-in-bash>More on <a href=/Week_2/Lecture2.md#flags-set-in-bash>Flags Set in Bash</a><a class=headerlink href=#more-on-flags-set-in-bash title="Copy link to this section for reference">&para;</a></h2> <h3 id=-><code>$-</code><a class=headerlink href=#- title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Special variable to print the flags set in bash.</li> </ul> <pre><code class=language-terminal>~$ echo $-
+himBHs
+</code></pre> <ul> <li>Let&rsquo;s run a command to check if there can be less number of flags.<ul> <li><code>bash</code> : spawn a childshell</li> <li><code>-c</code> : consider first non-option argument as command</li> <li><code>\</code> : escape character to stop early interpretation of <code>$-</code></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ bash -c &quot;echo \$-&quot;
+hBc
+</code></pre> <ul> <li>Check the pid of childshell and printing the forest view using <code>ps</code>. <ul> <li>Commands are separated with <code>;</code></li> </ul> </li> </ul> <pre><code class=language-terminal>~$ bash -c &quot;echo \$$; echo \$-; ps --forest&quot;
+</code></pre> <h3 id=history-command><code>history</code> command<a class=headerlink href=#history-command title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Stores commands run so far as history.</li> <li><code>!NUMBER</code> (bang) is used to refer <code>NUMBER</code>th command. <ul> <li>This is enabled when <code>H</code> flag is set.</li> </ul> </li> </ul> <pre><code class=language-bash>history
+</code></pre> <ul> <li>To run <code>echo $0</code> at position <code>2023</code> </li> </ul> <pre><code class=language-terminal>~$ !2023
+echo $0
+bash
+</code></pre> <h3 id=brace-expnasion>Brace Expnasion<a class=headerlink href=#brace-expnasion title="Copy link to this section for reference">&para;</a></h3> <ul> <li>Enabled using <code>B</code> flag.</li> <li>Expand <code>{start..stop}</code> into list of values between <code>start</code> and <code>stop</code> inclusive.</li> </ul> <pre><code class=language-terminal>~$ echo {a..d}
+a b c d
+~$ echo {5..1}
+5 4 3 2 1
+</code></pre> <h3 id=other-expansions>Other Expansions<a class=headerlink href=#other-expansions title="Copy link to this section for reference">&para;</a></h3> <ul> <li>A wildcard <code>*</code> matches all files.</li> </ul> <pre><code class=language-terminal>~$ echo *
+Desktop Documents Music Pictures Public snap Templates Videos
+~$ echo D*
+Desktop Documents Downloads
+</code></pre> <h2 id=multiple-commands-on-a-line>Multiple Commands on a Line<a class=headerlink href=#multiple-commands-on-a-line title="Copy link to this section for reference">&para;</a></h2> <ul> <li>Use semicolon <code>;</code> to separate commands.</li> <li>Combining <code>ls</code>, <code>date</code> and <code>wc</code> commands on same line.</li> <li><code>;</code> in the end is optional.</li> </ul> <pre><code class=language-terminal>~$ ls; date; wc -l /etc/profile;
+Desktop Documents Music Pictures Public snap Templates Videos
+Friday 23 December 2022 01:36:49 PM EET
+27 /etc/profile
+</code></pre> <h2 id=__comments>Comments</h2> <script src=https://giscus.app/client.js data-repo=inklyre/study-notes data-repo-id=R_kgDOKXOgPQ data-category=Q&amp;A data-category-id=DIC_kwDOKXOgPc4CZkDo data-mapping=pathname data-strict=0 data-reactions-enabled=0 data-emit-metadata=0 data-input-position=bottom data-theme=preferred_color_scheme data-lang=en data-loading=lazy crossorigin=anonymous async>
+</script> <!-- Synchronize Giscus theme with palette --> <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> Back to top </button> </main> <footer class=md-footer> <nav class="md-footer__inner md-grid" aria-label=Footer> <a href=../Week-1/ class="md-footer__link md-footer__link--prev" aria-label="Previous: Week 1"> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </div> <div class=md-footer__title> <span class=md-footer__direction> Previous </span> <div class=md-ellipsis> Week 1 </div> </div> </a> <a href=../Week-3/ class="md-footer__link md-footer__link--next" aria-label="Next: Week 3"> <div class=md-footer__title> <span class=md-footer__direction> Next </span> <div class=md-ellipsis> Week 3 </div> </div> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "../../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "search.highlight", "search.share", "search.suggest", "navigation.instant", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script> <script src=../../../assets/javascripts/bundle.ad660dcc.min.js></script> </body> </html>

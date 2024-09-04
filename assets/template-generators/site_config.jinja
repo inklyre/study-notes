@@ -1,0 +1,170 @@
+list = 
+for course in list:
+   for i in range(1, 13):
+       print(f"- week{i}: {course}/notes/week-{i}/index.md")
+   print(f"- Readings: {course}/readings/index.md")
+   print(f"- Videos: {course}/videos/index.md")
+   print(f"- Free MOOCs: {course}/MOOCs/index.md")
+   print(f"- Problems: {course}/problems/index.md")
+
+
+site_name: Programming Notes
+site_description: Readable material for Programming topics
+site_url: https://ankits.live/programming-notes
+
+# Repository
+repo_name: ankits-dot/programming-notes
+repo_url: https://github.com/ankits-dot/programming-notes
+edit_uri: edit/unstable/docs/
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - nl2br
+  - attr_list
+  - sane_lists
+  - meta
+  - smarty
+  - tables
+  - def_list
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/logo/logo.svg
+  logo: assets/logo/logo.svg
+
+  #shortcuts
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  highlightjs: true
+
+  #when editing a page
+  theme:
+  icon:
+    edit: material/pencil 
+    view: material/eye
+
+  palette:
+    #light mode
+    - scheme: default
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    #dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - navigation.footer
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    # - toc.integrate 
+
+markdown_extensions:
+  - toc:
+      title: On this Page
+      toc_depth: 2
+      permalink: true
+      permalink_title: Create link to this heading
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - admonition
+
+
+plugins:
+  - blog:
+      post_date_format: full
+      blog_dir: blog
+      # post_dir: "{blog}/articles"
+      archive_date_format: MMMM yyyy
+      post_readtime: true
+      blog_toc: true
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+extra:
+  analytics:
+    provider: google
+    property: G-Y3M9M779JV
+  generator: false
+
+
+#Information on How to navigate from the home page all parts of the website
+course_list = ['system-commands', 'python', 'mad-1', 'mad-2', 'dbms', 'pdsa', 'java']
+nav:
+  - Home:
+      - About: index.md
+      - Credits: credits/index.md
+  - Programming in Python:
+      - About the Course: python/about/index.md
+      - Notes:
+          - Week 1: python/notes/week-1/content.md
+          - Week 2: python/notes/week-2/content.md
+          - Week 3: python/notes/week-3/content.md
+          - Week 4: python/notes/week-4/content.md
+          - Week 5: python/notes/week-5/content.md
+          - Week 6: python/notes/week-6/content.md
+          - Week 7: python/notes/week-7/content.md
+          - Week 8: python/notes/week-8/content.md
+          - Week 9: python/notes/week-8/content.md
+          - Week 10: python/notes/week-8/content.md
+          - Week 11: python/notes/week-8/content.md
+          - Week 12: python/notes/week-8/content.md
+      - Readings: python/readings/index.md
+      - Videos: python/videos/index.md
+      - Free MOOCs: python/MOOCs/index.md
+      - Problems: python/problems/index.md
+
+  - System Commands:
+      - About the Course: system-commands/about/index.md
+      - Notes:
+          - Week 1: system-commands/notes/Week-1/content.md
+          - Week 2: system-commands/notes/Week-2/content.md
+          - Week 3: system-commands/notes/Week-3/content.md
+          - Week 4: system-commands/notes/Week-4/content.md
+          - Week 5: system-commands/notes/Week-5/content.md
+          - Week 6: system-commands/notes/Week-6/content.md
+          - Week 7: system-commands/notes/Week-7/content.md
+          - Week 8: system-commands/notes/Week-8/content.md
+      - Readings: system-commands/readings/index.md
+      - Videos: system-commands/videos/index.md
+      - Free MOOCs: system-commands/MOOCs/index.md
+      - Problems: system-commands/problems/index.md
+  # - PDSA: PDSA/index.md
+  # - DBMS: DBMS/index.md
+  # - MAD 1: mad-1/index.md
+  # - MAD 2: mad-2/index.md
+  # - Java: Java/index.md
+  - How to Contribute: contribute/index.md
+  - Blog:
+      - blog/index.md
+
+
+
+#using the below settings from mkdocs default theme   
