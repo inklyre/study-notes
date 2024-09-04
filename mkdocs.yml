@@ -1,0 +1,133 @@
+site_name: Inklyre Notes
+site_description: Readable material for Programming topics
+site_url: https://notes.inklyre.com
+
+# Repository
+repo_name: inklyre/notes
+repo_url: https://github.com/inklyre/study-notes
+edit_uri: edit/main/docs
+
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/logo/logo.svg
+  logo: assets/logo/logo.svg
+
+  #shortcuts
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  highlightjs: true
+
+  #when editing a page
+  theme:
+  icon:
+    edit: material/pencil 
+    view: material/eye
+
+  palette:
+    #light mode
+    - scheme: default
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    #dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - search.highlight
+    - search.share
+    - search.suggest
+    - navigation.instant
+    - navigation.footer
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    # - toc.integrate 
+
+markdown_extensions:
+  - toc:
+      title: On this Page
+      toc_depth: 2
+      permalink: true
+      permalink_title: Copy link to this section for reference
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - admonition
+  - footnotes
+  - nl2br
+  - attr_list
+  - sane_lists
+  - meta
+  - smarty
+  - tables
+  - def_list
+
+
+
+plugins:
+  - blog:
+      post_date_format: full
+      blog_dir: blog
+      # post_dir: "{blog}/articles"
+      archive_date_format: MMMM yyyy
+      post_readtime: true
+      blog_toc: true
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+extra:
+  analytics:
+    provider: google
+    property: G-Y3M9M779JV
+  generator: false
+
+
+#Information on How to navigate from the home page all parts of the website
+nav:
+  - Home:
+      - About: index.md
+      - Credits: credits/index.md
+
+  - System Commands:
+      - Notes:
+          - Week 1: system-commands/notes/Week-1/index.md
+          - Week 2: system-commands/notes/Week-2/index.md
+          - Week 3: system-commands/notes/Week-3/index.md
+          - Week 4: system-commands/notes/Week-4/index.md
+          - Week 5: system-commands/notes/Week-5/index.md
+          - Week 6: system-commands/notes/Week-6/index.md
+          - Week 7: system-commands/notes/Week-7/index.md
+          - Week 8: system-commands/notes/Week-8/index.md
+      - Readings: system-commands/readings/index.md
+      - Videos: system-commands/videos/index.md
+      - Free MOOCs: system-commands/MOOCs/index.md
+
+  - How to Contribute: contribute/index.md
+  - Blog:
+      - blog/index.md
+
+
+
+#using the below settings from mkdocs default theme   
